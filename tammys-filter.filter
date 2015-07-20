@@ -1,0 +1,1026 @@
+# Tammy's Path of Exile loot filter
+# Last updated 20 July 2015
+
+# ---------- RGB Sockets - purple highlight ----------------------------------
+
+# 4L RGB - Dodgerblue border
+Show
+    SocketGroup RGB
+    SetBackgroundColor 120 35 120 235
+    LinkedSockets = 4
+    SetBorderColor 30 144 255
+
+# 5L RGB - Yellow border, big
+Show
+    SocketGroup RGB
+    SetBackgroundColor 120 35 120 235
+    LinkedSockets = 5
+    SetBorderColor 255 255 0
+    SetFontSize 40
+
+# 6L RGB - Orange border, big
+Show
+    SocketGroup RGB
+    SetBackgroundColor 120 35 120 235
+    LinkedSockets >= 6
+    SetBorderColor 255 255 0
+    SetFontSize 45
+
+# 5 or more sockets (implies 3L or lower) with RGB - big
+Show
+    Sockets >= 5
+    SetFontSize 40
+    SocketGroup RGB
+    SetBackgroundColor 120 35 120 235
+    SetBorderColor 0 0 0
+
+# All others
+Show
+    SocketGroup RGB
+    SetBackgroundColor 120 35 120 235
+    SetBorderColor 0 0 0
+
+# ---------- LINKED SOCKETS --------------------------------------------------
+# Three linked sockets - up to about drop level 30 - dodgerblue border
+Show
+    LinkedSockets = 3
+    ItemLevel < 30
+    SetBorderColor 30 144 255
+
+# Four linked sockets: yellow border
+Show
+    LinkedSockets = 4
+    SetBorderColor 255 255 0
+
+# Five linked sockets: orange border, big
+Show
+    LinkedSockets = 5
+    SetBorderColor 255 165 0
+    SetFontSize 40
+
+# 6L: red border, big
+Show
+    LinkedSockets >= 6
+    SetBorderColor 255 0 0
+    SetFontSize 45
+
+# Five or more sockets: big
+Show
+    Sockets >= 5
+    SetFontSize 40
+
+# Emphasize superior skill gems - purple border
+Show
+    Quality > 0
+    Class Gem
+    SetFontSize 45
+    SetBorderColor 170 85 170
+
+# Jewels - navy highlight
+Show
+    Class Jewel
+    SetBackgroundColor 0 0 128
+    SetBorderColor 0 0 170
+
+# Highlight Blue/Rare Rustic Sash (melee weapon crafting recipe for leveling) and Chain Belt (spellcaster weapon crafting for leveling) - dark orange background
+Show
+    BaseType "Rustic Sash" "Chain Belt"
+    Rarity >= Magic
+    SetBackgroundColor 84 23 0
+    SetBorderColor 0 0 0
+
+# ---------- EXPERIMENTAL BLOCK ----------------------------------------------
+# Semi-transparent armour and weapons for low drop level
+# (Magic or Normal Rarity, no Quality)
+
+# Size larger than 2x3
+
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 14
+    DropLevel < 4
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 19
+    DropLevel < 9
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 24
+    DropLevel < 14
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 29
+    DropLevel < 19
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 34
+    DropLevel < 24
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 39
+    DropLevel < 29
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 44
+    DropLevel < 34
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 49
+    DropLevel < 39
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 54
+    DropLevel < 44
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 59
+    DropLevel < 49
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 64
+    DropLevel < 54
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 69
+    DropLevel < 59
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 74
+    DropLevel < 64
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 79
+    DropLevel < 69
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+
+# Size 2x3
+
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 14
+    DropLevel < 4
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 19
+    DropLevel < 9
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 24
+    DropLevel < 14
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 29
+    DropLevel < 19
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 34
+    DropLevel < 24
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 39
+    DropLevel < 29
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 44
+    DropLevel < 34
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 49
+    DropLevel < 39
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 54
+    DropLevel < 44
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 59
+    DropLevel < 49
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 64
+    DropLevel < 54
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 69
+    DropLevel < 59
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 74
+    DropLevel < 64
+    Width = 2
+    Height = 3
+    SetFontSize 25
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 79
+    DropLevel < 69
+    Width = 2
+    Height = 3
+    SetFontSize 25
+
+# Size 2x2
+
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 14
+    DropLevel < 4
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 19
+    DropLevel < 9
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 24
+    DropLevel < 14
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 29
+    DropLevel < 19
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 34
+    DropLevel < 24
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 39
+    DropLevel < 29
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 44
+    DropLevel < 34
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 49
+    DropLevel < 39
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 54
+    DropLevel < 44
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 59
+    DropLevel < 49
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 64
+    DropLevel < 54
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 69
+    DropLevel < 59
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 74
+    DropLevel < 64
+    Width = 2
+    Height = 2
+    SetFontSize 28
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 79
+    DropLevel < 69
+    Width = 2
+    Height = 2
+    SetFontSize 28
+
+# All other sizes
+
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 14
+    DropLevel < 4
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 19
+    DropLevel < 9
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 24
+    DropLevel < 14
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 29
+    DropLevel < 19
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 34
+    DropLevel < 24
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 39
+    DropLevel < 29
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 44
+    DropLevel < 34
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 49
+    DropLevel < 39
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 54
+    DropLevel < 44
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 59
+    DropLevel < 49
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 64
+    DropLevel < 54
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 69
+    DropLevel < 59
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 74
+    DropLevel < 64
+Show
+    Rarity <= Magic
+    Quality = 0
+    Class Gloves Boots "Body Armours" Helmets Shields Claws Daggers Wands "One Hand" Bows Staves "Two Hand"
+    SetBackgroundColor 0 0 0 70
+    ItemLevel >= 79
+    DropLevel < 69
+
+# ---------- END TRANSPARENCY FOR LOW LEVEL ARMOR/WEAPONS --------------------
+
+# ---------- FONT SIZE BASED ON ITEM SIZE ------------------------------------
+
+# ########## WHITE RING/AMULET ##########
+# Single width & height - large font - less large for white ring/amulet
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Class Rings Amulets
+    Rarity Normal
+    SetFontSize 36
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Class Rings Amulets
+    Rarity Normal
+    SetFontSize 36
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Class Rings Amulets
+    Rarity Normal
+    SetFontSize 36
+Show
+    Class Rings Amulets
+    Rarity Normal
+    SetFontSize 36
+
+# ########## SIZE 1x1: LARGE FONT ##########
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Width <= 1
+    Height <= 1
+    SetFontSize 40
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Width <= 1
+    Height <= 1
+    SetFontSize 40
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Width <= 1
+    Height <= 1
+    SetFontSize 40
+
+Show
+    Width <= 1
+    Height <= 1
+    SetFontSize 40
+
+# ########## SIZE 1x? : NORMAL FONT ##########
+
+# Width <= 1
+
+# Rare+
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Width <= 1
+    SetFontSize 38
+    Rarity >= Rare
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Width <= 1
+    SetFontSize 38
+    Rarity >= Rare
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Width <= 1
+    SetFontSize 38
+    Rarity >= Rare
+
+Show
+    Width <= 1
+    SetFontSize 38
+    Rarity >= Rare
+
+# Other Rarity
+
+# Flasks
+
+# 20+ Quality Flask - highlight dark green, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 0 65 0
+    SetBorderColor 255 255 0
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+    SetFontSize 34    
+
+# 14-19 Quality Flask - highlight dark green, green border
+Show
+    Quality > 13
+    SetBackgroundColor 0 65 0
+    SetBorderColor 34 130 0
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+    SetFontSize 34
+
+# 0-13 Quality Flask - highlight dark green, white border
+Show
+    Quality > 0
+    SetBackgroundColor 0 65 0
+    SetBorderColor 110 110 110
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+    SetFontSize 32
+
+# All other classes
+
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Width <= 1
+    SetFontSize 34
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Width <= 1
+    SetFontSize 34
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Width <= 1
+    SetFontSize 32
+
+Show
+    Width <= 1
+    SetFontSize 32
+
+# Height <= 1
+
+# Rare+
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Height <= 1
+    SetFontSize 38
+    Rarity >= Rare
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Height <= 1
+    SetFontSize 38
+    Rarity >= Rare
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Height <= 1
+    SetFontSize 38
+    Rarity >= Rare
+
+Show
+    Height <= 1
+    SetFontSize 38
+    Rarity >= Rare
+
+# Other Rarity
+
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Height <= 1
+    SetFontSize 34
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Height <= 1
+    SetFontSize 34
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Height <= 1
+    SetFontSize 32
+
+Show
+    Height <= 1
+    SetFontSize 32
+
+# ########## 2X2 ITEMS: SLIGHTLY REDUCED FONT ##########
+
+# Rare+
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Width = 2
+    Height = 2
+    SetFontSize 36
+    Rarity >= Rare
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Width = 2
+    Height = 2
+    SetFontSize 36
+    Rarity >= Rare
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Width = 2
+    Height = 2
+    SetFontSize 36
+    Rarity >= Rare
+
+Show
+    Width = 2
+    Height = 2
+    SetFontSize 36
+    Rarity >= Rare
+
+# Other Rarity
+
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Width = 2
+    Height = 2
+    SetFontSize 32
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Width = 2
+    Height = 2
+    SetFontSize 32
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Width = 2
+    Height = 2
+    SetFontSize 28
+
+Show
+    Width = 2
+    Height = 2
+    SetFontSize 28
+
+# ########## 2X3 ITEMS: FURTHER REDUCED FONT ##########
+
+# Rare+
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Width = 2
+    Height = 3
+    SetFontSize 34
+    Rarity >= Rare
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Width = 2
+    Height = 3
+    SetFontSize 34
+    Rarity >= Rare
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Width = 2
+    Height = 3
+    SetFontSize 34
+    Rarity >= Rare
+
+Show
+    Width = 2
+    Height = 3
+    SetFontSize 34
+    Rarity >= Rare
+
+# Other Rarity
+
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Width = 2
+    Height = 3
+    SetFontSize 30
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Width = 2
+    Height = 3
+    SetFontSize 30
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Width = 2
+    Height = 3
+    SetFontSize 25
+
+Show
+    Width = 2
+    Height = 3
+    SetFontSize 25
+
+# ########## NEVER SHOW RARES SMALLER THAN NORMAL FONT (32) ##########
+Show
+    Rarity >= Rare
+
+# ########## TINY FONT FOR VERY LARGE ITEMS ##########
+# 20+ Quality - highlight dark grey, yellow border
+Show
+    Quality >= 20
+    SetBackgroundColor 65 65 65
+    SetBorderColor 255 255 0
+    Width >= 2
+    Height > 3
+    SetFontSize 28
+
+# 14-19 Quality - highlight dark grey, green border
+Show
+    Quality > 13
+    SetBackgroundColor 65 65 65
+    SetBorderColor 34 130 0
+    Width >= 2
+    Height > 3
+    SetFontSize 28
+
+# 0-13 Quality - add grey border
+Show
+    Quality > 0
+    SetBorderColor 110 110 110
+    Width >= 2
+    Height > 3
+    SetFontSize 22
+
+Show
+    Width >= 2
+    Height > 3
+    SetFontSize 22
